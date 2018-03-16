@@ -15,6 +15,8 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            Timer timer = new Timer();
+            Controls.Add(timer);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -47,6 +49,7 @@ namespace WindowsFormsApp1
         private int btnCntNew = 0;
         private void button3_Click(object sender, EventArgs e)
         {
+            btnCntNew++;
             Button button = new Button(); // 버튼 객체 생성
             Controls.Add(button); // 버튼 객체를 디자이너에 등록
             button.Location = new Point(527, 61 + (25 * btnCntNew)); // 생성된 버튼 객체의 위치 지정
@@ -57,7 +60,7 @@ namespace WindowsFormsApp1
 
         private void Button_Click(object sender, EventArgs e)
         {
-            button3_Click(button3, new EventArgs());
+            button3_Click(sender, new EventArgs());
         }
     }
 }
