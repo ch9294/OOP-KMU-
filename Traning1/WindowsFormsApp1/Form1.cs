@@ -15,6 +15,13 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            FormClosed += Form1_FormClosed;
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MessageBox.Show("버튼을 지울까요?", "종료", MessageBoxButtons.YesNo);
+            MessageBox.Show(elapsedTime + "초 경과", "종료",MessageBoxButtons.YesNo);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -59,6 +66,12 @@ namespace WindowsFormsApp1
         private void Button_Click(object sender, EventArgs e)
         {
             button3_Click(sender, new EventArgs());
+        }
+
+        private int elapsedTime = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            elapsedTime++;
         }
     }
 }
