@@ -15,12 +15,22 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            FormClosed += Form1_FormClosed;
+            FormClosed += Form1_FormClosed; // 프로그램 종료 버튼을 누를시 발생할 이벤트 핸들러 연결
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            MessageBox.Show("버튼을 지울까요?", "종료", MessageBoxButtons.YesNo);
+            if (DialogResult.Yes == MessageBox.Show("버튼을 지울까요?", "종료", MessageBoxButtons.YesNo))
+                {
+                foreach (var item in Controls)
+                {
+                    if (item is Button)
+                    {
+                        Controls.Remove((Button)item);
+                        
+                    }
+                }
+            }
             MessageBox.Show(elapsedTime + "초 경과", "종료",MessageBoxButtons.YesNo);
         }
 
@@ -65,13 +75,13 @@ namespace WindowsFormsApp1
 
         private void Button_Click(object sender, EventArgs e)
         {
-            button3_Click(sender, new EventArgs());
+            button3_Click(sender, new EventArgs()); // 버튼을 클릭 할 때마다 button3의 이벤트 핸들러 호출
         }
 
-        private int elapsedTime = 0;
+        private int elapsedTime = 0; // 타이머
         private void timer1_Tick(object sender, EventArgs e)
         {
-            elapsedTime++;
+            elapsedTime++; // 1초씩 증가함
         }
     }
 }
