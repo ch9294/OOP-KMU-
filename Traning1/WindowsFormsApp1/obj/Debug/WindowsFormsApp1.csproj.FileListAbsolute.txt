@@ -8,3 +8,13 @@ C:\Users\ch929\OneDrive\바탕 화면\2018-1학기\객체 지향 프로그래밍
 C:\Users\ch929\OneDrive\바탕 화면\2018-1학기\객체 지향 프로그래밍\2018-OOP(C#)\Traning1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\ch929\OneDrive\바탕 화면\2018-1학기\객체 지향 프로그래밍\2018-OOP(C#)\Traning1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\ch929\OneDrive\바탕 화면\2018-1학기\객체 지향 프로그래밍\2018-OOP(C#)\Traning1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\ch929\Desktop\OOP\Traning1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\ch929\Desktop\OOP\Traning1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\ch929\Desktop\OOP\Traning1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\ch929\Desktop\OOP\Traning1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+C:\Users\ch929\Desktop\OOP\Traning1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\ch929\Desktop\OOP\Traning1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\ch929\Desktop\OOP\Traning1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\ch929\Desktop\OOP\Traning1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\ch929\Desktop\OOP\Traning1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\ch929\Desktop\OOP\Traning1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

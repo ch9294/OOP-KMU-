@@ -14,6 +14,7 @@ namespace WindowsFormsApp1
     {
         public Form1()
         {
+            
             InitializeComponent();
             FormClosed += Form1_FormClosed; // 프로그램 종료 버튼을 누를시 발생할 이벤트 핸들러 연결
         }
@@ -24,10 +25,9 @@ namespace WindowsFormsApp1
                 {
                 foreach (var item in Controls)
                 {
-                    if (item is Button)
+                    if (item is Button) // item이 Button 타입이라면?
                     {
-                        Controls.Remove((Button)item);
-                        
+                        Controls.Clear(); // 버튼 삭제
                     }
                 }
             }
