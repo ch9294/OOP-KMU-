@@ -43,6 +43,7 @@ namespace Traning2
         private void SecondBtn_Click(object sender, EventArgs e)
         {
             CustomForm custom = new CustomForm();
+            Form1.forms.Push(custom);
             custom.Show();
         }
 
