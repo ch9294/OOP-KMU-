@@ -12,7 +12,7 @@ namespace Traning2
 {
     public partial class Form2 : Form
     {
-        class CustomForm : Form
+        class CustomForm : Form // 사용자 정의 폼 클래스
         {
             public CustomForm()
             {
@@ -26,7 +26,9 @@ namespace Traning2
 
             private void ThirdBtn_Click(object sender, EventArgs e)
             {
+                // 마지막 폼임을 알리는 alert창 띄우기
                 MessageBox.Show("마지막 폼입니다.","다중 폼 테스트",MessageBoxButtons.OK);
+                
             }
         }
 
@@ -43,7 +45,8 @@ namespace Traning2
         private void SecondBtn_Click(object sender, EventArgs e)
         {
             CustomForm custom = new CustomForm();
-            Form1.forms.Push(custom);
+            Form1.S_form.Push(custom);
+            custom.Text = "CustomForm";
             custom.Show();
         }
 
