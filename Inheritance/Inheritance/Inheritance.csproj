@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{14D945BC-345A-414C-BA02-A6CEFEB5CA03}</ProjectGuid>
+    <ProjectGuid>{86BB7CD4-4B6C-42B9-B10E-70E711F79CB2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ClassTest</RootNamespace>
-    <AssemblyName>ClassTest</AssemblyName>
+    <RootNamespace>Inheritance</RootNamespace>
+    <AssemblyName>Inheritance</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,12 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessModifierTest.cs" />
-    <None Include="deepcopyTest.cs" />
-    <None Include="Program.cs" />
+    <Compile Include="MainApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="staticTest.cs" />
-    <Compile Include="ThisTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -16,6 +16,7 @@ namespace Traning3
         static private Queue<double> makeNum = new Queue<double>(); // 완성된 숫자 큐
         static private Queue<string> operatorKey = new Queue<string>(); // 연산자 큐
         bool clear = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace Traning3
             {
                 textBox1.Clear();
                 textBox1.Text = num.Text;
+                clear = false; // 변화 없음
             }
             else
             {
@@ -47,7 +49,7 @@ namespace Traning3
             else // 피연산자 큐가 공백이 아닐 경우
             {
                 operatorKey.Enqueue(op.Text);
-                clear = false; // 변화 없음
+                
                 textBox2.Text = operatorKey.Peek();
 
                 if (operatorKey.Count == 1) // 연산자가 하나 입력 되었을 경우
@@ -63,13 +65,19 @@ namespace Traning3
                         return;
                     }
                 }
-                else // 연산자가 두개 입력 되었을 경우
+                else // 연산자가 두 개 입력 되었을 경우
                 {
-                    makeNumber();
-                    if (makeNum.Count == 1)
+                    if(number.Count != 0) // 연산자가 두개째 입력되었을 때 number 큐에 조각이 있는경우
+                    {
+                        makeNumber();
+                    }
+                    
+                    if (makeNum.Count == 1) // 
                     {
                         MessageBox.Show("연산자를 연속으로 입력하였습니다.");
-                        operatorKey.Dequeue(); // 연속으로 입력된 연산자 삭제
+                        operatorKey = new Queue<string>(operatorKey.Reverse());
+                        operatorKey.Dequeue();
+                        return;
                     }
                     else
                     {
