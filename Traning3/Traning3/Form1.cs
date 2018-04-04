@@ -24,18 +24,26 @@ namespace Traning3
 
         private void inputNumber(Button num)
         {
+            
+            if (num.Text.Equals(".") && number.Count ==0)
+            {
+                MessageBox.Show(".이 맨 먼저 나올 수 없습니다.");
+                return;
+            }
+ 
             number.Enqueue(num.Text);
-            if (clear)
+            if (clear) // makeNum에 숫자가 추가 되었을 경우
             {
                 textBox1.Clear();
                 textBox1.Text = num.Text;
                 clear = false; // 변화 없음
             }
-            else
+            else // 숫자가 추가 되지 않았을 경우
             {
                 textBox1.Text += num.Text;
             }
 
+            clear = false;
         }
 
         private void inputOperator(Button op)
@@ -52,17 +60,27 @@ namespace Traning3
                 
                 textBox2.Text = operatorKey.Peek();
 
-                if (operatorKey.Count == 1) // 연산자가 하나 입력 되었을 경우
+                if (operatorKey.Count == 1) // 연산자가 한 개 입력 되었을 경우
                 {
-                    if (operatorKey.Peek().Equals("=")) // = 이 입력되었을 겨우
-                    {
-                        textBox1.Text = makeNum.Dequeue().ToString();
-                        return; // 계산 완료
-                    }
+
                     if (number.Count != 0)
                     {
                         makeNumber();
-                        return;
+                    }
+
+                    if (operatorKey.Peek().Equals("=")) // = 이 입력되었을 겨우
+                    {
+                        textBox1.Text = makeNum.Peek().ToString();
+                        operatorKey.Clear();
+                        textBox2.Clear();
+                        return; // 계산 완료
+                    }
+
+                    if(makeNum.Count == 2)
+                    {
+                        Calculate();
+                        operatorKey.Clear();
+                        textBox2.Clear();
                     }
                 }
                 else // 연산자가 두 개 입력 되었을 경우
@@ -83,6 +101,7 @@ namespace Traning3
                     {
                         Calculate(); // 계산
                         operatorKey.Clear(); // 사용한 연산자 삭제
+                        textBox2.Clear();
                     }
 
                 }
@@ -105,8 +124,8 @@ namespace Traning3
 
         private void Calculate() // 계산하기
         {
-            double result = 0;
-            switch (operatorKey.Peek())
+            double result = 0; // 변환한 실수 값을 임시적으로 저장할 변수
+            switch (operatorKey.Peek()) //
             {
                 case "+": result = makeNum.Dequeue() + makeNum.Dequeue(); break;
                 case "-": result = makeNum.Dequeue() - makeNum.Dequeue(); break;
@@ -116,6 +135,7 @@ namespace Traning3
             }
             makeNum.Enqueue(result); // 완성된 숫자를 저장
             textBox1.Text = makeNum.Peek().ToString();
+            
         }
 
         private void button1_Click(object sender, EventArgs e) // 0
@@ -214,7 +234,6 @@ namespace Traning3
 
         private void button19_Click(object sender, EventArgs e) //CE
         {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
