@@ -8,7 +8,7 @@ namespace Overridng
 {
     class ArmorSuite
     {
-        public virtual void Initialize()
+        public void Initialize()
         {
             Console.WriteLine("ArmorSuite");
         }
@@ -16,16 +16,15 @@ namespace Overridng
 
     class IronMan : ArmorSuite
     {
-        public override void Initialize()
+        public void Initialize()
         {
-            base.Initialize();
             Console.WriteLine("아이언맨 추가 장비 장착");
         }
     }
 
     class WarMachine : ArmorSuite
     {
-        public override void Initialize()
+        public new void Initialize()
         {
             base.Initialize();
             Console.WriteLine("워머신 추가 장비 장착");
