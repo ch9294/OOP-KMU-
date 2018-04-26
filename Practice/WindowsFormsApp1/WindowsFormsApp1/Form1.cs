@@ -15,7 +15,6 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -23,11 +22,15 @@ namespace WindowsFormsApp1
 
         }
 
+        public int cnt1 = 1;
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("dfds", "sdfs", MessageBoxButtons.OK);
+            cnt1++;
             Button btn = new Button();
             Controls.Add(btn);
-            btn.Location = new Point(51, 43 +);
+            btn.Location = new Point(51, 43 + (cnt1*30));
+            textBox1.Text += '+';
         }
 
         public int time = 0;
