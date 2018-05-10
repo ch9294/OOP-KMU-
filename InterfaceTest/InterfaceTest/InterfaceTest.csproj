@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C5CE10E-F893-4F29-AE7E-8D262B73EE07}</ProjectGuid>
+    <ProjectGuid>{E4406650-4C05-43FD-A63B-286F0D37990A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ExtensionMethod</RootNamespace>
-    <AssemblyName>ExtensionMethod</AssemblyName>
+    <RootNamespace>InterfaceTest</RootNamespace>
+    <AssemblyName>InterfaceTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="TEST2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

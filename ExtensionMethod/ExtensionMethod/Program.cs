@@ -10,20 +10,9 @@ namespace ExtensionMethod
     {
         public static string Reverse(this string str)
         {
-            Stack<char> copy = new Stack<char>();
-            char[] copy2 = str.ToCharArray();
-
-            for(int i = 0; i < copy2.Length; i++)
-            {
-                copy.Push(copy2[i]);
-            }
-
-            for(int i = 0; i < copy2.Length; i++)
-            {
-                copy2[i] = copy.Pop();
-            }
-            string result = copy2.ToString();
-            return result;
+            char[] reverse = str.ToCharArray();
+            Array.Reverse(reverse);
+            return reverse.ToString();
         }
     }
 
@@ -32,7 +21,9 @@ namespace ExtensionMethod
         static void Main(string[] args)
         {
             string str = "helloworld";
+            
             string reverse = str.Reverse();
+            Console.WriteLine(str);
             Console.WriteLine(reverse);
         }
     }

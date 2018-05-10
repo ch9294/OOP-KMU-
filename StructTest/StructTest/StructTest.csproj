@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C5CE10E-F893-4F29-AE7E-8D262B73EE07}</ProjectGuid>
+    <ProjectGuid>{93784383-126C-4F1B-8F4A-CDF122039046}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ExtensionMethod</RootNamespace>
-    <AssemblyName>ExtensionMethod</AssemblyName>
+    <RootNamespace>StructTest</RootNamespace>
+    <AssemblyName>StructTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="TEST2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

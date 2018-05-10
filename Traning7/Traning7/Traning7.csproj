@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C5CE10E-F893-4F29-AE7E-8D262B73EE07}</ProjectGuid>
+    <ProjectGuid>{78E62CAE-A568-4B8E-856F-8E3755F58B6E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ExtensionMethod</RootNamespace>
-    <AssemblyName>ExtensionMethod</AssemblyName>
+    <RootNamespace>Traning7</RootNamespace>
+    <AssemblyName>Traning7</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractDisplay.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="TEST2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
