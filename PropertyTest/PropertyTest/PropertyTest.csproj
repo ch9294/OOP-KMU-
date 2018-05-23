@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{78E62CAE-A568-4B8E-856F-8E3755F58B6E}</ProjectGuid>
+    <ProjectGuid>{CA4112F6-081D-4F4F-A7CA-BA9479B9AF72}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Traning7</RootNamespace>
-    <AssemblyName>Traning7</AssemblyName>
+    <RootNamespace>PropertyTest</RootNamespace>
+    <AssemblyName>PropertyTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="7-2.cs" />
-    <Compile Include="AbstractDisplay.cs" />
-    <None Include="7-1.cs" />
+    <None Include="interfacePro.cs" />
+    <None Include="Program.cs" />
+    <Compile Include="Ex9_2.cs" />
+    <Compile Include="PropertiesInterfaceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

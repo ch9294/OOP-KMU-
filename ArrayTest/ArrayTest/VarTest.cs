@@ -10,23 +10,13 @@ namespace ArrayTest
     {
         static void Main(string[] args)
         {
-            var a = 20;
-            Console.WriteLine("Type: {0}, Value: {1}", a.GetType(), a);
-
-            var b = 3.14159;
-            Console.WriteLine("Type: {0}, Value: {1}", b.GetType(), b);
-
-            var c = "Hello world!!";
-            Console.WriteLine("Type: {0}, Value: {1}", c.GetType(), c);
-
-            var d = new int[] { 1, 2, 3, 4, 5 };
-            //for(int i = 0; i < 5; i++)
-            foreach(var value in d)
+            int[] d = new int[] { 3,7,4,9,1 };
+            Array.Sort(d);
+            foreach(int item in d)
             {
-                Console.WriteLine("Type: {0}, Value: {1}", d.GetType(), d);
+                Console.WriteLine(item);
             }
-
-            
+            Console.WriteLine(Array.IndexOf(d,7));
         }
     }
 }

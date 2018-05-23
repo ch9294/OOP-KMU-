@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace Traning7
 {
-    interface AbstractDisplay
+    abstract class AbstractDisplay
     {
-        void open();
-        void print();
-        void close();
-        void display();
+        abstract public void open();
+        abstract public void print();
+        abstract public void close();
+
+        public void display()
+        {
+            open();
+            print();
+            close();
+        }
     }
 
     class charDisplay : AbstractDisplay
@@ -22,12 +28,13 @@ namespace Traning7
         {
             this.character = character;
         }
-        public void open()
+
+        public override void open()
         {
             Console.Write("<<");
         }
 
-        public void print()
+        public override void print()
         {
             for(int i = 0; i < 13; i++)
             {
@@ -35,16 +42,9 @@ namespace Traning7
             }
         }
 
-        public void close()
+        public override void close()
         {
             Console.WriteLine(">>");
-        }
-
-        public void display()
-        {
-            open();
-            print();
-            close();
         }
     }
 
@@ -55,44 +55,35 @@ namespace Traning7
         {
             this.str = str;
         }
-        public void open()
+        public override void open()
         {
             Console.Write('+');
             for(int i = 0; i < 13; i++)
             {
                 Console.Write('-');
             }
-            Console.Write('+');
+            Console.WriteLine('+');
+        }
+
+        public override void print()
+        {
             printLine();
         }
 
-        public void print()
-        {
-            for(int i = 0; i < 5; i++)
-            {
-                Console.Write('|');
-                Console.Write(str);
-                Console.Write('|');
-                printLine();
-            }
-        }
-
-        public void close()
+        public override void close()
         {
             open();
-            printLine();
-        }
-
-        public void display()
-        {
-            open();
-            print();
-            close();
         }
 
         private void printLine()
         {
-            Console.WriteLine();
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write('|');
+                Console.Write(str);
+                Console.Write('|');
+                Console.WriteLine();
+            }
         }
     }
 }

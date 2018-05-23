@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{78E62CAE-A568-4B8E-856F-8E3755F58B6E}</ProjectGuid>
+    <ProjectGuid>{C439E900-27C9-4513-B48F-20669AA43933}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Traning7</RootNamespace>
-    <AssemblyName>Traning7</AssemblyName>
+    <RootNamespace>AnnoyTest</RootNamespace>
+    <AssemblyName>AnnoyTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="7-2.cs" />
-    <Compile Include="AbstractDisplay.cs" />
-    <None Include="7-1.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
