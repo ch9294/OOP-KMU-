@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{834D06F2-1CF3-4EB4-9401-CD5ED95CAD7D}</ProjectGuid>
+    <ProjectGuid>{5E910178-FE9C-4F14-A0E2-CA533B025629}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Traning8</RootNamespace>
-    <AssemblyName>Traning8</AssemblyName>
+    <RootNamespace>EventTest</RootNamespace>
+    <AssemblyName>EventTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Ex8_2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{834D06F2-1CF3-4EB4-9401-CD5ED95CAD7D}</ProjectGuid>
+    <ProjectGuid>{DCEF66F6-C337-4B89-8F90-3AC2FE290C4B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Traning8</RootNamespace>
-    <AssemblyName>Traning8</AssemblyName>
+    <RootNamespace>Chapter13</RootNamespace>
+    <AssemblyName>Chapter13</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Ex8_2.cs" />
-    <Compile Include="Program.cs" />
+    <None Include="Program.cs" />
+    <None Include="AnonymousMethod.cs" />
+    <None Include="DelegateChains.cs" />
+    <None Include="EventTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsingCallback.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

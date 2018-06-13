@@ -58,10 +58,6 @@ namespace Traning8
             //list.Add("def");
 
             List list = new List();
-            
-            while()
-
-            
         }
     }
 }

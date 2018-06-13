@@ -15,24 +15,28 @@ namespace Traning8
         public MyList()
         {
             array = new int[3];
+            for(int i = 0; i < array.Length; i++)
+            {
+                array[i] = i + 1;
+            }
         }
 
-        public int this[int index]
-        {
-            get
-            {
-                return array[index];
-            }
-            set
-            {
-                if(index >= array.Length)
-                {
-                    Array.Resize<int>(ref array, index + 1);
-                    Console.WriteLine("Array Resized : {0}",array.Length);
-                }
-                    array[index] = value;
-            }
-        }
+        //public int this[int index]
+        //{
+        //    get
+        //    {
+        //        return array[index];
+        //    }
+        //    set
+        //    {
+        //        if(index >= array.Length)
+        //        {
+        //            Array.Resize<int>(ref array, index + 1);
+        //            Console.WriteLine("Array Resized : {0}",array.Length);
+        //        }
+        //            array[index] = value;
+        //    }
+        //}
 
         ////IEnumerator 멤버
         //public object Current
@@ -77,10 +81,10 @@ namespace Traning8
         {
             MyList list = new MyList();
             
-            for(int i = 0; i < 5; i++)
-            {
-                list[i] = i;
-            }
+            //for(int i = 0; i < 5; i++)
+            //{
+            //    list[i] = i;
+            //}
 
             foreach(int e in list)
             {

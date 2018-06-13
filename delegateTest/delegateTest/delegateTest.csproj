@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{834D06F2-1CF3-4EB4-9401-CD5ED95CAD7D}</ProjectGuid>
+    <ProjectGuid>{6930E3D0-8459-494F-8234-5872D43E2BB6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Traning8</RootNamespace>
-    <AssemblyName>Traning8</AssemblyName>
+    <RootNamespace>delegateTest</RootNamespace>
+    <AssemblyName>delegateTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Ex8_2.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="DelTest1.cs" />
+    <None Include="MySort.cs" />
+    <None Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

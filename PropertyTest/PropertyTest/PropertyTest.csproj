@@ -42,10 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Test1.cs" />
     <None Include="interfacePro.cs" />
     <None Include="Program.cs" />
-    <Compile Include="Ex9_2.cs" />
-    <Compile Include="PropertiesInterfaceTest.cs" />
+    <None Include="Ex9_2.cs" />
+    <None Include="PropertiesInterfaceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
